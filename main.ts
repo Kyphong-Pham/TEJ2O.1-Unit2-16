@@ -9,7 +9,7 @@
 let distanceToObject: number = 0
 
 // setup
-radio.setGroup(247)
+radio.setGroup(24)
 basic.showIcon(IconNames.Happy)
 
 // receive
@@ -36,7 +36,7 @@ while (true) {
     } else {
         basic.clearScreen()
         basic.showNumber(distanceToObject)
-        radio.sendString("")
+        radio.sendString("Safe")
         basic.pause(1000)
     }
 }
